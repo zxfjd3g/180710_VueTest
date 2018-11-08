@@ -30,12 +30,20 @@
 <script type="text/javascript" src="../js/vue.js"></script>
 <script type="text/javascript">
   // 创建Vue的实例对象
-  new Vue({ // 配置对象: 属性名是一些特定的名称
+  const vm = new Vue({ // 配置对象: 属性名是一些特定的名称
     el: '#test',  // element, 值是一个选择器, 指定vue管理哪个标签区域由vue来管理
     data: {  // 值是一个对象, 包含n个属性数据, 模板中可以直接读取data中所有属性数据
       msg: 'atguigu'
     }
   })
+
+  // 给Vue函数对象添加test方法
+  Vue.test = function () {
+    
+  }
+  vm.test = function () {
+
+  }
 </script>
 </body>
 </html>
